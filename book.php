@@ -16,10 +16,6 @@ class Book {
 
     public function read($pages) {
         $this->currentPage += $pages;
-        
-        if ($this->currentPage > $this->pages) {
-            $this->currentPage = $this->pages;
-        }
          return $this; 
     }
 
